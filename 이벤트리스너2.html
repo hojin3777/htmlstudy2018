@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+        }
+    </style>
+
+<body>
+    
+    <div id="box"></div>
+    <button id="btn1">color</button>
+    <button id="btn2">alert</button>
+
+    <script>
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+
+    btn1.addEventListener('click',function(){
+        box.style.backgroundColor="pink";
+    });
+    
+    btn2.addEventListener('click',function(){
+        alert('alert!');
+    });
+    </script>
+
+</body>
+</html>

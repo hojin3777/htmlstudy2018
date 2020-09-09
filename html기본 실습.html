@@ -1,0 +1,111 @@
+<html>
+<head>
+<title> 웹 프로그래밍 실습 </title>
+</head>
+<body>
+
+<h1>한국디지털미디어고등학교</h1> 텍스트, 표 예제
+<h2><p> E-비즈니스 <br> 디지털컨텐츠 <br> 웹프로그래밍 <br> 해킹방어 </p></h2>
+
+위의 4개의 학과가 있다 <br>
+총 6개반으로 이루어져있습니다.  <br><br>
+경기도 안산시 단원구 사세충열로 94 한국디지털미디어고등학교 <br>
+
+<table border=1>
+	<tr>
+		<td> 1열 </td>
+		<td> 2열 </td>
+		<td> 3열 </td>
+	</tr>
+	<tr>
+		<td rowspan=2> 1행 1열 </td>
+		<td> 1행 2열 </td>
+		<td> 1행 3열 </td>
+	</tr>
+	<tr>
+		<td> 2행 2열 </td>
+		<td> 2행 3열 </td>
+	</tr>
+	<tr>
+		<td colspan=3> 3행 1열 </td>
+	</tr>
+</table>
+
+<form> 입시지원 예제
+이름: <input type="text" name="name"><br>
+학번: <input type="text" name="number" size=10><br>
+패스워드: <input type="password" name="password"><br>
+학과선택: 
+<input type= "radio" name="major" value="E-business"> E-business &nbsp;&nbsp;&nbsp;
+<input type= "radio" name="major" value="Digital Contents"> Digital Contents  &nbsp;&nbsp;&nbsp;
+<input type= "radio" name="major" value="Web Programming"> Web Programming  &nbsp;&nbsp;&nbsp;
+<input type= "radio" name="major" value="Hacking Defence"> Hacking Defence  &nbsp;&nbsp;&nbsp;
+<br><br>
+
+<input type= "button" value="확인" onclick="alert('확인되었습니다.')"> <br><br>
+
+학과선택 <select name="학과">
+	<option value="EB">EB</option>
+	<option value="DC">DC</option>
+	<option value="WP">WP</option>
+	<option value="HD">HD</option>
+</form>
+
+<form> 지원예제 쪽지시험
+ID: <input type="id" name="id"><br>
+PW: <input type="password" name="password"><br>
+성별: <input type="radio" name="gender" value="남자">남자 &nbsp; <input type="radio" name="gender" value="여자">여자 <br>
+의견: <br><textarea rows=15 cols=50></textarea>
+<br>
+선택: <br><select name="선택">
+	<option value="EB">EB</option>
+	<option value="DC">DC</option>
+	<option value="WP">WP</option>
+	<option value="HD">HD</option>
+</form>
+
+<form> 전화, 숫자, 날짜 태그
+<input type="tel" name="tel" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required><br>
+<input type="number" min="190s" max="290" step="10" value="240" name="shoesize"><br>
+<input type="date" min="1900-01-01" max="2018-12-31" name="date"><br>
+</form>
+
+<form> 카드 지원 예시
+	<fieldset>
+		<legend>카드 정보 입력</legend>
+		1.
+		<fieldset>
+			<legend>카드 타입</legend>
+			1.<input type="radio" name="cardtype" value="VISA"> VISA <br>
+			2.<input type="radio" name="cardtype" value="VISA"> AmEx <br>
+			3.<input type="radio" name="cardtype" value="VISA"> Master <br>
+		</fieldset><br>
+		2. 사용자 이름 : <input type="text" name="name"><br>
+		3. 카드 만기 기한 : <input type="date" min="2001-01-01" max="2050-12-31" name="date">
+		
+	</fieldset>
+</form>
+
+<form> 학생정보
+	<fieldset>
+		<legend>학생 기본정보</legend>
+			이름: <input type="text" name="name" placeholder="한글로 입력하세요." autofocus><br>
+			학교명 : <input type="text" name="school" placeholder="한국디지털미디어고등학교" readonly><br>
+			학과 : 
+			<select name="class">
+			<option value="학과선택">학과선택
+				<optgroup label="공과대학">
+					<option value="archi"> 건축공학과</option>
+					<option value="com"> 컴퓨터공학과</option>
+					<option value="indu"> 산업공학과</option>
+				</optgroup>
+				<optgroup label="상경대학">
+					<option value="business"> 경영학과</option>
+					<option value="econos"> 경제학과</option>
+				</optgroup>
+				
+				
+</form>
+
+</body>
+</html>

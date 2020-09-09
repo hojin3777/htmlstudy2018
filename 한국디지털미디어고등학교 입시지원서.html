@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>한국디지털미디어고등학교 입시지원서</title>
+<style>
+    #title{
+        text-align: center;
+        color: white;
+        height: 90px;
+        width: 570px;
+        background-color: magenta;
+        padding: 10px;
+
+        text-shadow: 3px 3px 5px black;
+    }
+    #table{
+        height: 190px;
+        width: 495px;
+        text-align: center;
+        background-color: beige;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        padding: 45px;
+
+        border-style: dashed;
+        border-width: 3px;
+        border-color: black;
+        border-radius: 2%;
+    }
+    .link{
+        font-size: 14pt;
+    }
+    a:visited{color: magenta;}
+    a:hover{color: white;}
+    a:active{color: blue;}
+    #info{
+        display: -ms-grid;
+        flex-direction: row; 
+        background-color: rgb(239, 255, 236); 
+        height: 400px; width: 540px; 
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+    #introduce{
+        display: -ms-grid;
+        flex-direction: row; 
+        background-color: rgb(213, 255, 246); 
+        height: 500px; width: 540px; 
+        justify-content: center;
+        align-items: center;
+        padding: 3%;
+    }
+</style>
+
+
+</head>
+<div id=title>
+<body>
+<h1>한국디지털미디어고등학교 입시지원서</h1><br>
+</div>
+
+<div id="table">
+<table border="8">
+    <caption>[실시간 경쟁률 안내]</caption>
+    <tr>
+        <th>학과명</th>
+        <th>지원 인원</th>
+        <th>현재 경쟁률</th>
+    </tr>
+    <tr>
+        <td>E-business</td>
+        <td>100</td>
+        <td>100:1</td>
+    </tr>
+    <tr>
+        <td>Digital Contents</td>
+        <td>100</td>
+        <td>100:1</td>
+    </tr>
+     <tr>
+        <td>Web Programming</td>
+        <td>100</td>
+        <td>100:1</td>
+    </tr>
+    <tr>
+        <td>Hacking defence</td>
+        <td>100</td>
+        <td>100:1</td>
+    </tr>
+</table>
+<p class="link"><a href="http://www.dimigo.hs.kr/" target="_blank">한국디지털미디어고등학교 홈페이지</a></p>
+</div>
+
+<div id="info">
+<fieldset>
+    <legend>인적사항 기재</legend>
+    1.이름 : <input type="text" name="name" placeholder="한글로 정확히 기재하세요."><br><br>
+    2.나이 : <input type=numeber name=age min=10 max=20 step="1"><br><br>
+    3.성별 : <input type="radio" name="gender" value="male">남자 &nbsp;<input type="radio" name="gender" value="female">여자<br><br>
+    4.생년월일 <input type="date" min="1990-01-01" max="2018-12-31" name="data"><br><br>
+    5.거주지역: <input type="text" name="home"><br><br>
+    6.전화번호: <input type="tel" name="tel" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required><br>
+</fieldset>
+<br>
+<fieldset>
+    <legend>지망학과 기재</legend>
+    1.본교 지망학과 : <select name="지망학과">
+        <option value="E-business">E-business</option>
+        <option value="Digital contents">Digital contents</option>
+        <option value="Web Programming">Web Programming</option>
+        <option value="Hacking defence">Hacking defence</option>
+    </select><br><br>
+    2.진로 희망 사항[중복선택 가능] : 취업<input type="checkbox" name="job"> 진학<input type="checkbox" name="college"><br>
+</fieldset>
+</div>
+
+<div id="title">
+    <h1>디미고 입학 소개서</h1><br>
+</div>
+
+<div id="introduce">
+    <fieldset>
+        <legend>자기 소개란</legend>
+        1. 자기 소개하기<br><br>
+        <textarea rows="15"; cols="60" placeholder="반드시 100자 이상 입력" style="resize:none;"></textarea><br><br>
+        2. 증명 사진 업로드 <input type="file" accept="image/jpg. image/gif"><br><br>
+        3. E-mail 주소 입력 <input type="email" required><br><br>
+        4. 대학 지망 학과 <select name="major">
+                <option value="학과선택">학과선택 </option>
+                    <optgroup label="인문대학">
+                        <option value="kor">국어국문학과</option>
+                        <option value="eng">영어영문학과</option>
+                    </optgroup>
+                    <optgroup label="공과대학">
+                        <option value="archi"> 건축공학과</option>
+                        <option value="com"> 컴퓨터공학과</option>
+                        <option value="indu"> 산업공학과</option>
+                    </optgroup>
+                    <optgroup label="상경대학">
+                        <option value="business"> 경영학과</option>
+                        <option value="econos"> 경제학과</option>
+                    </optgroup>
+                    </select><br><br>
+                <input type="button" name="submit" value="최종 제출">
+    </fieldset>
+</div>
+<br><br><br><br><br>
+
+
+</body>
+</html>

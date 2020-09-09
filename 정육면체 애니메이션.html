@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+    <style>
+        body{
+            width: 200px;
+            margin: 200px auto;
+            position: relative;
+            animation: rint 5s ease infinite;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes rint{
+            from{
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+            }
+            to{
+                transform: rotateX(720deg) rotateY(720deg) rotateZ(720deg);
+            }
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.5;
+        }
+        div#box1{
+            transform: rotateY(0deg) translate3d(0px, 0px, 100px);
+            background: red;
+        }
+        div#box2{
+            transform: rotateY(90deg) translate3d(0px, 0px, 100px);
+            background: yellow;
+        }
+        div#box3{
+            transform: rotateY(180deg) translate3d(0px, 0px, 100px);
+            background: green;
+        }
+        div#box4{
+            transform: rotateY(270deg) translate3d(0px, 0px, 100px);
+            background: blue;
+        }
+        div#box5{
+            transform: rotateX(90deg) translate3d(0px, 0px, 100px);
+            background: cyan;
+        }
+        div#box6{
+            transform: rotateX(270deg) translate3d(0px, 0px, 100px);
+            background: magenta;
+        }
+        div#text{
+            transform: translate(50px,50px,50px);
+        }
+    </style>
+
+<body>
+    <div id=box1></div>
+    <div id=box2></div>
+    <div id=box3></div>
+    <div id=box4></div>
+    <div id=box5></div>
+    <div id=box6></div>
+    <div id=img><img src="디미고 로고.png" width=200px height=200px ></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <style>
+    div#box1{
+        width: 200px;
+        height: 50px;
+        border: 1px solid black;
+        background: pink;
+        transition-property: width, height, border, transform, color, font-size;
+        transition-duration: 1s, 1s, 3s, 2s, 2s, 3s; /* 비울시 앞에것 반복 */
+        transition-timing-function: ease, linear, ease-in, ease-out, ease-in-out;
+        /* transform: translate(10px, 10px), scale(1.5, 1.5), rotate(30deg), skew(30deg, 40deg); */
+    }
+    div:hover#box1{
+        width: 400px;
+        height: 300px;
+        border: 10px dashed white;
+        background: green;
+        color: white;
+        font-size: 24pt;
+    }
+    div{
+        width:50px;
+        height:50px;
+        background-color:yellow;
+        border: 1px solid black;
+        text-align: center;
+    }
+    div#box2{
+        transform: translate(100px, 10px);
+        background-color: blue;
+    }
+    div#box3{
+        transform: scale(1.5, 1.2);
+        background-color: red;
+    }
+    div#box4{
+        transform: translate(200px,30px) rotate(30deg) scale(1.5,1.9);
+        background-color: green;
+    }
+    div#box5{
+        transform: skew(30deg, 20deg);
+        background-color: pink;
+    }
+    </style>
+<body>
+
+    <div id="box1">마우스를 올려보세요.</div>
+    <div >BOX1</div>
+    <div id="box2">BOX2</div>
+    <div id="box3">BOX3</div>
+    <div id="box4">BOX4</div>
+    <div id="box5">BOX5</div>
+
+</body>
+</html>
